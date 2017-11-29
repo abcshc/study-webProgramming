@@ -5,23 +5,30 @@ import java.util.ArrayList;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import model.User;
 
 @Controller
+@RequestMapping("/users")
 public class UserController {
 	private ArrayList<User> users = new ArrayList<User>();
 
-	@RequestMapping(value="/SignUp", method= {RequestMethod.GET, RequestMethod.POST})
+	@GetMapping("signup")
+	public String newUser() {
+		return "newUser";
+	}
+
+	@PostMapping("signup")
 	public String signUp(User user) {
 		System.out.println("user : " + user);
 		users.add(user);
-		return "redirect:/UserList";
+		return "redirect:/users/list";
 	}
-	
-	@GetMapping("/UserList")
+
+	@RequestMapping(value = "list", method = { RequestMethod.GET, RequestMethod.POST })
 	public String showList(Model model) {
 		model.addAttribute("users", users);
 		return "userList";
