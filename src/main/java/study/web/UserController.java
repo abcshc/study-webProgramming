@@ -7,9 +7,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
-import model.User;
+import study.model.User;
 
 @Controller
 @RequestMapping("/users")
@@ -28,7 +27,7 @@ public class UserController {
 		return "redirect:/users/list";
 	}
 
-	@RequestMapping(value = "list", method = { RequestMethod.GET, RequestMethod.POST })
+	@RequestMapping("list")
 	public String showList(Model model) {
 		model.addAttribute("users", users);
 		return "userList";
