@@ -10,6 +10,6 @@ public class HomeController {
 
 	@RequestMapping("")
 	public String hello(String name, Model model) {
-		return "hello";
+		return "step3/index";
 	}
 }

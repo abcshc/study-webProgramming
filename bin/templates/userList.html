@@ -11,6 +11,8 @@
 	<caption style="caption-side: top;">사용자 목록</caption>
 	<thead>
 		<tr>
+			<th>No</th>
+			<th>아이디</th>
 			<th>이름</th>
 			<th>이메일</th>
 			<th>비밀번호</th>
@@ -19,6 +21,8 @@
 	<tbody>
 	{{#users}}
 		<tr>
+			<td>{{id}}</td>
+			<td>{{userId}}</td>
 			<td>{{name}}</td>
 			<td>{{email}}</td>
 			<td>{{password}}</td>
