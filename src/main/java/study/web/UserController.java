@@ -11,25 +11,25 @@ import study.web.model.User;
 import study.web.model.UsersRepository;
 
 @Controller
-@RequestMapping("/users")
+@RequestMapping("/user")
 public class UserController {
 	@Autowired
 	private UsersRepository usersRepository;
 
 	@GetMapping("signup")
 	public String newUser() {
-		return "newUser";
+		return "step3/user/form";
 	}
 
 	@PostMapping("signup")
 	public String signUp(User user) {
 		usersRepository.save(user);
-		return "redirect:/users/list";
+		return "redirect:list";
 	}
 
 	@RequestMapping("list")
 	public String showList(Model model) {
 		model.addAttribute("users", usersRepository.findAll());
-		return "userList";
+		return "step3/user/list";
 	}
 }
