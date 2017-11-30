@@ -24,9 +24,9 @@ repositories {
 
 
 dependencies {	
-	compile group: 'org.webjars.npm', name: 'popper.js', version: '1.12.3'	
-	compile group: 'org.webjars', name: 'jquery', version: '3.2.1'
-	compile group: 'org.webjars', name: 'bootstrap', version: '4.0.0-beta.2'
+	compile('org.webjars.npm:popper.js:1.12.3')	
+	compile('org.webjars:jquery:3.2.1')
+	compile('org.webjars:bootstrap:4.0.0-beta.2')
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 	compile('org.springframework.boot:spring-boot-starter-mustache')
 	compile('org.springframework.boot:spring-boot-starter-web')

@@ -1,0 +1,2 @@
+insert into user (email, user_id, password, name) values ('abcshc@gmail.com', 'abcshc', '1234', '소희철');
+insert into user (email, user_id, password, name) values ('shcshcshc@gmail.com', 'shcshc', '1234', '소희철2');
