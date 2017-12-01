@@ -1,4 +1,4 @@
-package study.web.model;
+package study.model;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

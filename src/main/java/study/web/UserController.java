@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import study.web.model.User;
-import study.web.model.UsersRepository;
+import study.model.User;
+import study.model.UsersRepository;
 
 @Controller
 @RequestMapping("/user")
