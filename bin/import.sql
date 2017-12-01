@@ -1,2 +1,4 @@
 insert into user (email, user_id, password, name) values ('abcshc@gmail.com', 'abcshc', '1234', '소희철');
 insert into user (email, user_id, password, name) values ('shcshcshc@gmail.com', 'shcshc', '1234', '소희철2');
+insert into question (writer, title, contents, datetime, point) values ('abcshc', 'InitializingBean implements afterPropertiesSet() 호출되지 않는 문제.', 'A 에 의존성을 가지는 B라는 클래스가 있습니다.<br/>B라는 클래스는 InitializingBean 을 상속하고 afterPropertiesSet을 구현하고 있습니다.<br/>서버가 가동되면서 bean들이 초기화되는 시점에 B라는 클래스의 afterPropertiesSet 메소드는 A라는 클래스의 특정 메소드인 afunc()를 호출하고 있습니다.', sysdate, 11);
+insert into question (writer, title, contents, datetime, point) values ('shcshc', '질문이요~ 너무 궁금해요~', '답변부탁드려요~', sysdate, 3);

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration>
-<configuration>
+<configuration debug="true">
 	<include resource="org/springframework/boot/logging/logback/defaults.xml" />
 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
 		<layout class="ch.qos.logback.classic.PatternLayout">
@@ -9,10 +9,10 @@
 	</appender>
 
 	<!-- 자바 패키지별 log level을 설정한다. -->
-	<logger name="web" level="DEBUG" />
+	<logger name="study" level="DEBUG" />
 
 	<!-- 기본 log level을 설정한다. -->
-	<root level="INFO">
+	<root level="DEBUG">
 		<appender-ref ref="STDOUT" />
 	</root>
 </configuration>
