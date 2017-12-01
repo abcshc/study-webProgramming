@@ -24,5 +24,6 @@ dist/
 nbdist/
 .nb-gradle/
 
-### class ###
+### class, jar ###
 *.class
+*.jar
